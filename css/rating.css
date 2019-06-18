@@ -1,0 +1,38 @@
+/*========================== 
+Styling for the Star rating system 
+============================*/
+
+.rating-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#rating {
+  text-align: center;
+  perspective: 250px;
+  width: 125px;
+  background: black;
+  display: flex;
+  margin-right: 2em;
+  align-self: center;
+}
+
+#rating span {
+  cursor: pointer;
+  font-size: 15px;
+  color: darkgrey;
+  opacity: .5;
+  flex: 1;
+  transition: all 150ms;
+  transform: rotateX(45deg);
+  transform-origin: center bottom;
+  position: relative;
+}
+
+#rating span.hover {
+  color: yellow;
+  opacity: 1.5;
+  transform: rotateX(0deg);
+  text-shadow: 0 0 30px #ffc;
+}

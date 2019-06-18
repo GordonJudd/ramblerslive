@@ -1,0 +1,155 @@
+/* This page contains the styling for creature.html */
+
+/*==========
+Main Elements
+==========*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url(../images/frog.jpg) right center no-repeat;  
+    background-size: cover;
+    
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    height: 150px;
+    padding-top: .25em;
+     
+}
+
+img {
+    transform: rotate(90deg);
+}
+
+
+
+/*==========
+ID's
+==========*/
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+/*==========
+Classes
+==========*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align:center;
+    background-color: rgb(245, 245, 220, 0.7);
+}
+
+.main-header {
+    text-align: center;
+    font-size: 4em;
+}
+
+.question {
+    text-align: center;
+    font-size: 2em;
+}
+
+.blanks {
+    margin: 0 10px;
+    line-height: 70px; 
+    color: black;
+}
+
+.wordbank   {
+    height: 160px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.turtle {
+    width: 100%;
+}
+
+.animal {
+    padding: 10px;  
+    cursor: move;
+    z-index: 10;
+    background-color: rgb(43, 177, 61);
+    color: #fff;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    position: absolute;
+    width: 125px;
+    height: 45px;
+  }
+
+.animal:nth-child(5) {
+    transform: translate3d(180px, 0, 0)
+}
+ 
+.animal:nth-child(3) {
+    transform: translate3d(350px, 0, 0)
+}
+
+.animal:nth-child(4) {
+    transform: translate3d(350px, 70px, 0)
+}
+ 
+.animal:nth-child(6) {
+    transform: translate3d(0, 70px, 0)
+}
+
+.animal:nth-child(2) {
+    transform: translate3d(180px, 70px, 0)
+}
+
+.clearfix::before {
+    content: ""; 
+    display: table; 
+    clear: both;
+    overflow: auto; 
+}
+  
+
+@media (min-width: 1000px) {
+
+body {
+    max-width: 950px;
+    margin: 0 auto;
+    
+}
+
+.wordbank {
+    margin-left: 38px;
+}
+
+/*==========
+:nth-child Pseudo-class
+==========*/
+.animal:nth-child(5) {
+    transform: translate3d(150px, 0, 0)
+}
+ 
+.animal:nth-child(3) {
+    transform: translate3d(300px, 0, 0)
+}
+
+.animal:nth-child(4) {
+    transform: translate3d(450px, 0, 0)
+}
+ 
+.animal:nth-child(6) {
+    transform: translate3d(600px, 0, 0)
+}
+
+.animal:nth-child(2) {
+    transform: translate3d(750px, 0, 0)
+}
+}

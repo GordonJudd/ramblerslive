@@ -1,0 +1,339 @@
+/* This page contains the styling for index.html */
+
+/* ================
+    Main Elements 
+===================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background: white;
+    font-family: cursive;
+}
+
+a {
+    color: orange;
+    text-decoration: none; 
+}
+
+h1 {
+    margin: 0; 
+    padding: 1em 0 .5em;
+}
+
+
+/* ====================
+    Psuedo ELements 
+=======================*/
+
+a:hover {
+    color: rgb(21, 196, 21);
+}
+
+.kayak:hover {
+    opacity: 0.5;
+}
+
+.kayak:hover::before {
+    content: 'Click here for Creature Test';
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+
+/* ====================
+    Classes 
+=======================*/
+
+.main-header {
+    background: linear-gradient(#144474, lightblue, white); 
+    text-align: left;
+    margin: 0 0 2em;  
+    padding: 0 1em .5em 1em; 
+    box-sizing: border-box;
+    font-family: fantasy;
+    height: 250px;
+
+}
+
+.main-header a {
+    color: rgb(0, 0, 0); 
+}
+.main-header a:hover {
+   color: #B8CA98;
+}
+
+.name {
+    text-align: center;
+   
+}
+
+.main-nav a {
+    display: block;
+
+}
+.main-nav li {
+    text-align: center;
+    display: block; 
+    width: 85%;
+    margin: 0 auto;
+    padding: .25em;
+    margin-bottom: .5em;
+}
+
+.instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    width: 40px; 
+    height: 40px; 
+    -webkit-filter: invert(90%); filter: invert(90%);    
+}
+
+/* .main-headline {
+    display: flex;
+    height: 400px;
+} */
+
+.waterfall {
+    background: url(../images/waterfall.jpg) left no-repeat;
+    background-size: cover;
+}
+.random {
+    background: url(../images/IMG_5757.JPG) center no-repeat;
+    background-size: cover;
+}
+.kayak {
+    background: url(../images/kayak.jpg) center no-repeat;
+    background-size: cover;
+}
+
+img.waterfall, 
+.random, 
+.kayak {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+img.bus1,
+.bus2,
+.bus3,
+.bus4 {
+    width: 23%;
+    border-radius: 2em;
+}
+
+.bus4 {
+    align-self: center;
+}
+
+.waterfall, 
+.random, 
+.kayak {
+    width: 250px; 
+}
+
+.row,
+.trails,
+.creatures {
+    background-color: #ecf0f1;
+    border-radius: 1em;
+    padding-top: .25em;
+    margin: 1em;
+}
+.bus, 
+.moreBus, 
+.descript {
+    width: 90%; 
+    margin: 1em auto; 
+}
+
+.bus,
+.secHead {
+    text-align:  center;
+}
+
+.descript,
+.moreBus {
+    padding-bottom: 1.5em;
+}
+
+.main-footer {
+    color: rgb(181, 251, 251);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background: rgb(92, 91, 91);
+    text-align: center;
+    padding: .75em 0;
+}
+
+.pictures {
+    width: 100%;
+    margin: 0 14px;
+    display: flex;
+}
+
+.pics {
+    align-content: space-between;
+    /* align-self: center; */
+    margin: 0 auto;
+}
+
+.star-message {
+    position: absolute;
+    right: 50px;
+    top: -50px;
+    display: none;
+}
+
+.star-message-show {
+    display: block;
+    color: green;
+    font-size: 5em;
+    top: -500px;
+}
+
+
+/* ================
+        ID's 
+===================*/
+
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+
+
+
+
+/* ================
+    Media Queries 
+===================*/
+
+/* Tablet size */
+
+@media (min-width: 768px){
+
+    .main-header{
+        text-align: center; 
+        padding-top: 25px; 
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 3em; 
+    }
+
+    .main-nav {
+        padding-left: 1.25em; /*To center nav under title. 
+                            Remove if spacing issue is solved*/
+    }
+
+    .main-nav li {
+        display: inline-block; 
+        padding: .5em; 
+        width: 100px;
+    }
+    .waterfall {
+        width: 50%;
+        border-radius: .5em 0 0 .5em;
+        order: -1;  
+        
+    }
+
+    .row {
+        width: 80%; 
+        height: 400px;
+        margin: 0 auto; 
+        border-radius: .5em;
+        padding-top: 0;
+        display: flex;
+        flex-flow:row wrap;
+    }
+
+    .sub-row {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    
+
+    .bus, 
+    .moreBus {
+        width: 100%; 
+        padding-left: 4%;
+        padding-right: 4%; 
+    }
+
+    /* .bus {
+        text-align: center; 
+        float: right; 
+    }
+
+    .moreBus {
+        float: left; 
+    } */
+
+    .descript,
+    .moreBus {
+        padding-bottom: 0;
+    }
+
+    .trails {   
+        margin-left: 5%; 
+        margin-right: 5%; 
+        float: left; 
+    }
+
+    .random,
+    .kayak {   
+        width: 100%;
+        height: 240px; 
+        border-radius: .5em;
+        order: -1;
+    }
+
+    .trails, 
+    .creatures {
+        width: 42.5%; 
+        float: left; 
+        border-radius: .5em;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chunk {
+        margin: auto; 
+    }
+
+    .clearfix::after {
+        content: ""; 
+        display: table; 
+        clear: both;
+        overflow: auto; 
+    }
+}
+
+
+
+/* 
+Laptop size
+
+@media (min-width: 1024px){
+
+
+Test hover */
+
