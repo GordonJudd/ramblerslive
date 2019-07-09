@@ -101,7 +101,7 @@ a:hover {
     background-size: cover;
 }
 .random {
-    background: url(../images/IMG_5757.JPG) center no-repeat;
+    background: url(../images/IMG_5757.JPG) right no-repeat;
     background-size: cover;
 }
 .kayak {
@@ -118,16 +118,14 @@ img.waterfall,
     
 }
 
+
 img.bus1,
 .bus2,
 .bus3,
 .bus4 {
     width: 23%;
     border-radius: 2em;
-}
-
-.bus4 {
-    align-self: center;
+    padding-left: 1em;
 }
 
 .waterfall, 
@@ -174,13 +172,13 @@ img.bus1,
 
 .pictures {
     width: 100%;
-    margin: 0 14px;
-    display: flex;
+    margin: 0 auto;
+    display: inline-block;
+    align-content: right;
 }
 
 .pics {
-    align-content: space-between;
-    margin: 0 auto;
+    justify-content: flex-end;
 }
 
 .star-message {
