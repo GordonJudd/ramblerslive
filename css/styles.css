@@ -230,10 +230,10 @@ img.bus1,
         font-size: 3em; 
     }
 
-    .main-nav {
-        padding-left: 1.25em; /*To center nav under title. 
-                            Remove if spacing issue is solved*/
-    }
+    /* .main-nav {
+        padding-left: 1.25em; To center nav under title. 
+                            Remove if spacing issue is solved
+    } */
 
     .main-nav li {
         display: inline-block; 

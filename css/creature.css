@@ -63,6 +63,7 @@ Classes
     margin: 0 10px;
     line-height: 70px; 
     color: black;
+    display: inline;
 }
 
 .wordbank   {
@@ -87,6 +88,12 @@ Classes
     width: 125px;
     height: 45px;
   }
+
+.a1 {
+    display: inline-block;
+    background: lightgrey;
+    height: 60px;
+}
 
 .animal:nth-child(5) {
     transform: translate3d(180px, 0, 0)
